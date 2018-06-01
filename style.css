@@ -6,3 +6,18 @@
             .x-ng-cloak {
                 display: none !important;
             }
+
+            html {
+                            font-family: sans-serif;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        body {
+                            background: #ECECEC;
+                            color: #313534;
+                            line-height: 1.84615385;
+                            margin: 0;
+                            padding: 0;
+                            font-size: 13px;
+                        }
