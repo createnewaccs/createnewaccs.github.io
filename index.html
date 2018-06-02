@@ -7,38 +7,103 @@
   <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Hello from ag-grid!</h1>
-
+<div class="header">
+</div>
+<div style="height:100%; position:relative;">
   <div id="myGrid" class="ag-theme-material"></div>
-
+</div>
   <script type="text/javascript" charset="utf-8">
     // specify the columns
     var columnDefs = [
       {headerName: "Name", field: "name"},
       {headerName: "Price", field: "price"},
-      {headerName: "Price", field: "price"}
+      {headerName: "Requirements", field: "req"},
+      {headerName: "Rating", field: "rating"},
+      {headerName: "Ending", field: "ending"}
     ];
 
     // specify the data
     var rowData = [
-      {name: "Ubanx", price: "$?", price: 35000},
-      {name: "TradeRiser", price: "$?", price: 32000},
-      {name: "Baanx", price: "$?", price: 72000}
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
+      {name: "TradeRiser", price: "$?", req: "?", rating: "?", ending: "1 days"},
+      {name: "Baanx", price: "$?", req: "?", rating: "?", ending: "3 days"}
     ];
+
+    var minRowHeight = 25;
+    var currentRowHeight = minRowHeight;
 
     // let the grid know which columns and what data to use
     var gridOptions = {
       columnDefs: columnDefs,
       rowData: rowData,
-      enableSorting: true
+      enableSorting: true,
+      pagination: true,
+      paginationPageSize: 15,
+      onGridReady: function (params) {
+        minRowHeight = 25;
+        currentRowHeight = minRowHeight;
+        params.api.sizeColumnsToFit();
+
+
+
+        window.addEventListener('resize', function() {
+          setTimeout(function() {
+            params.api.sizeColumnsToFit();
+          })
+      })
+
+  },
+  onGridSizeChanged: onGridSizeChanged,
+
+  getRowHeight: function() {
+      return currentRowHeight;
+  },
     };
 
-  // lookup the container we want the Grid to use
-  var eGridDiv = document.querySelector('#myGrid');
+    function onGridSizeChanged(params) {
+    // get the height of the grid body - this excludes the height of the headers
+    var gridHeight = document.getElementsByClassName('ag-body')[0].offsetHeight;
 
-  // create the grid passing in the div to use together with the columns & data we want to use
-  new agGrid.Grid(eGridDiv, gridOptions);
+    // get the rendered rows
+    var renderedRows = params.api.getRenderedNodes();
+
+    // if the rendered rows * min height is greater than available height, just just set the height
+    // to the min and let the scrollbar do its thing
+    if (renderedRows.length * minRowHeight >= gridHeight) {
+        if (currentRowHeight !== minRowHeight) {
+            currentRowHeight = minRowHeight;
+            params.api.resetRowHeights();
+        }
+    } else {
+        // set the height of the row to the grid height / number of rows available
+        currentRowHeight = Math.floor(gridHeight / renderedRows.length);
+        params.api.resetRowHeights();
+    }
+}
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var eGridDiv = document.querySelector('#myGrid');
+      new agGrid.Grid(eGridDiv, gridOptions);
+      gridOptions.api.sizeColumnsToFit();
+  });
 
   </script>
+<div class="footer">
+</div>
 </body>
 </html>

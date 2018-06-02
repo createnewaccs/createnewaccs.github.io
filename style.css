@@ -1,4 +1,28 @@
+*/ {
+    border: 1px solid #000 !important;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    height: 10%;
+}
+
 #myGrid {
-    width: 500px;
-    height: 500px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 95%;
+    height: 90%;
+}
+
+.footer {
+    height: 20%;
 }
