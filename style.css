@@ -2,8 +2,15 @@
     border: 1px solid #000 !important;
 }
 
-html {
+html, body {
     background-color: #E7E8E8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    background-color: #7B7A74;
 }
 
 table {
@@ -20,6 +27,12 @@ table {
     height: 90%;
     position: absolute;
     background-color: #FFF;
+    color: #7B7A74;
+}
+
+footer {
+    height: 300px;
+    background-color: #7B7A74;
 }
 
 #number {
@@ -44,6 +57,16 @@ table {
     color: #7B7A74;
 }
 
+#type {
+    width: 50px;
+    text-align: center;
+}
+
+#typeWallet {
+    color: #7B7A74;
+    text-align: center;
+}
+
 #love {
     width: 80px;
     text-align: center;
@@ -66,25 +89,18 @@ table {
     text-align: center;
 }
 
-#countDownColorGreen {
-    background-color: #B7EDAA;
-}
-
-#countDownColorRed {
-    background-color: #E9BBCA;
-}
-
 #nameLink {
-    color: #000;
+    color: #7B7A74;
 }
 
-#name, #number, #price, #love, #req {
+#name, #number, #price, #love, #req, #type {
     border-right: 1px solid #8D8B84;
 }
 
 th {
     background-color: #7B7A74;
     color: #FFF;
+    cursor: pointer;
 }
 
 td, th {
@@ -96,6 +112,16 @@ td {
     border-bottom: 1px solid #DDD;
 }
 
-tr:hover {
+/** tr:hover {
     box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+}**/
+
+tr:hover {
+    background-color: #E7E8E8;
+}
+
+tfoot th {
+    background-color: #FFF;
+    cursor: auto;
+    height: 15px;
 }
