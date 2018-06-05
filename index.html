@@ -1,109 +1,203 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
-  <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-material.css">
-  <link type="text/css" rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-<div class="header">
-</div>
-<div style="height:100%; position:relative;">
-  <div id="myGrid" class="ag-theme-material"></div>
-</div>
-  <script type="text/javascript" charset="utf-8">
-    // specify the columns
-    var columnDefs = [
-      {headerName: "Name", field: "name"},
-      {headerName: "Price", field: "price"},
-      {headerName: "Requirements", field: "req"},
-      {headerName: "Rating", field: "rating"},
-      {headerName: "Ending", field: "ending"}
-    ];
+<script type="text/javascript" charset="utf-8">
+function createCountDown(elementId, date) {
 
-    // specify the data
-    var rowData = [
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "Ubanx", price: "$?", req: "?", rating: "?", ending: "4 days"},
-      {name: "TradeRiser", price: "$?", req: "?", rating: "?", ending: "1 days"},
-      {name: "Baanx", price: "$?", req: "?", rating: "?", ending: "3 days"}
-    ];
+var countDownDate = new Date(date).getTime();
 
-    var minRowHeight = 25;
-    var currentRowHeight = minRowHeight;
+var x = setInterval(function() {
 
-    // let the grid know which columns and what data to use
-    var gridOptions = {
-      columnDefs: columnDefs,
-      rowData: rowData,
-      enableSorting: true,
-      pagination: true,
-      paginationPageSize: 15,
-      onGridReady: function (params) {
-        minRowHeight = 25;
-        currentRowHeight = minRowHeight;
-        params.api.sizeColumnsToFit();
+var now = new Date().getTime();
 
+var distance = countDownDate - now;
 
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        window.addEventListener('resize', function() {
-          setTimeout(function() {
-            params.api.sizeColumnsToFit();
-          })
-      })
-
-  },
-  onGridSizeChanged: onGridSizeChanged,
-
-  getRowHeight: function() {
-      return currentRowHeight;
-  },
-    };
-
-    function onGridSizeChanged(params) {
-    // get the height of the grid body - this excludes the height of the headers
-    var gridHeight = document.getElementsByClassName('ag-body')[0].offsetHeight;
-
-    // get the rendered rows
-    var renderedRows = params.api.getRenderedNodes();
-
-    // if the rendered rows * min height is greater than available height, just just set the height
-    // to the min and let the scrollbar do its thing
-    if (renderedRows.length * minRowHeight >= gridHeight) {
-        if (currentRowHeight !== minRowHeight) {
-            currentRowHeight = minRowHeight;
-            params.api.resetRowHeights();
-        }
-    } else {
-        // set the height of the row to the grid height / number of rows available
-        currentRowHeight = Math.floor(gridHeight / renderedRows.length);
-        params.api.resetRowHeights();
-    }
+if (days < 7) {
+    document.getElementById(elementId).style.backgroundColor = "#E9BBCA";
+}
+else {
+    document.getElementById(elementId).style.backgroundColor = "#B7EDAA";
 }
 
+document.getElementById(elementId).innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    document.addEventListener("DOMContentLoaded", function() {
-      var eGridDiv = document.querySelector('#myGrid');
-      new agGrid.Grid(eGridDiv, gridOptions);
-      gridOptions.api.sizeColumnsToFit();
-  });
+if (distance < 0) {
+clearInterval(x);
+document.getElementById(elementId).innerHTML = "ENDED";
+}
+}, 1000);
+}
 
-  </script>
-<div class="footer">
+createCountDown("countDown01", "2018-06-07")
+createCountDown("countDown02", "2018-06-20")
+createCountDown("countDown03", "2018-06-08")
+createCountDown("countDown04", "2018-06-04")
+createCountDown("countDown05", "2018-06-20")
+createCountDown("countDown06", "2018-06-06")
+createCountDown("countDown07", "2018-06-04")
+createCountDown("countDown08", "2018-06-20")
+createCountDown("countDown09", "2018-06-16")
+createCountDown("countDown10", "2018-06-17")
+createCountDown("countDown11", "2018-06-20")
+createCountDown("countDown12", "2018-06-14")
+createCountDown("countDown13", "2018-06-09")
+createCountDown("countDown14", "2018-06-08")
+createCountDown("countDown15", "2018-06-10")
+createCountDown("countDown16", "2018-06-04")
+</script>
+<div style="height:1000px; position: relative;">
+<table>
+<thead>
+  <tr>
+    <th id="number">#</th>
+    <th id ="name">Name</th>
+    <th id="price">Price</th>
+    <th id="req">Requirements</th>
+    <th id="love"><i class="fas fa-heart"></i></th>
+    <th id="countDown">Ending</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td id="numbers">1</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown01"></td>
+  </tr>
+  <tr>
+    <td id="numbers">2</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown02"></td>
+  </tr>
+  <tr>
+    <td id="numbers">3</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown03"></td>
+  </tr>
+  <tr>
+    <td id="numbers">4</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fas fa-envelope"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown04"></td>
+  </tr>
+  <tr>
+    <td id="numbers">5</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown05"></td>
+  </tr>
+  <tr>
+    <td id="numbers">6</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown06"></td>
+  </tr>
+  <tr>
+    <td id ="numbers">7</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fas fa-envelope"></i><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown07"></td>
+  </tr>
+  <tr>
+    <td id="numbers">8</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fas fa-envelope"></i><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown08"></td>
+  </tr>
+  <tr>
+    <td id="numbers">9</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown09"></td>
+  </tr>
+  <tr>
+    <td id="numbers">10</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown10"></td>
+  </tr>
+  <tr>
+    <td id="numbers">11</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fas fa-envelope"></i><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown11"></td>
+  </tr>
+  <tr>
+    <td id="numbers">12</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown12"></td>
+  </tr>
+  <tr>
+    <td id="numbers">13</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown13"></td>
+  </tr>
+  <tr>
+    <td id="numbers">14</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown14"></td>
+  </tr>
+  <tr>
+    <td id="numbers">15</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-bitcoin"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown15"></td>
+  </tr>
+  <tr>
+    <td id="numbers">16</td>
+    <td><a href="#" id="nameLink">Ubanx</a></td>
+    <td>$?</td>
+    <td id="reqs"><i class="fab fa-telegram-plane"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-reddit-alien"></i></td>
+    <td id="loved"><i class="fas fa-heart"></i><i class="fas fa-heart"></i></td>
+    <td id="countDown16"></td>
+  </tr>
+</tbody>
+</table>
 </div>
 </body>
 </html>
