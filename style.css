@@ -46,6 +46,10 @@ table {
     text-align: right;
 }
 
+#name {
+    width: auto;
+}
+
 #price {
     width: 200px;
 }
