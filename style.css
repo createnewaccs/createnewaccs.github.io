@@ -17,6 +17,7 @@ table {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     border-collapse: collapse;
+    white-space: nowrap;
     width: 95%;
     margin: auto;
     top: 0;
