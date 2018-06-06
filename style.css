@@ -11,6 +11,14 @@ html, body {
 .header {
     height: 100px;
     background-color: #7B7A74;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.header img {
+    width: auto;
+    height: 100%;
 }
 
 table {
@@ -19,14 +27,9 @@ table {
     border-collapse: collapse;
     white-space: nowrap;
     table-layout: fixed;
-    width: 95%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 90%;
-    position: absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     background-color: #FFF;
     color: #7B7A74;
 }
@@ -50,8 +53,8 @@ table {
     width: 350px;
 }
 
-#price {
-    width: 200px;
+#value {
+    width: 100px;
 }
 
 #req {
@@ -94,13 +97,14 @@ table {
 #countDown13, #countDown14, #countDown15, #countDown16 {
     text-align: center;
     color: #696863;
+    border: none;
 }
 
 #nameLink {
     color: #7B7A74;
 }
 
-#name, #number, #price, #love, #req, #type {
+#name, #number, #value, #love, #req, #type {
     border-right: 1px solid #8D8B84;
 }
 
@@ -170,8 +174,12 @@ tfoot th {
     background-color: #FFF;
     color: #7B7A74;
 }
-.divTableRow {
+.divTableRow, .divTableHeadRow, .divTableFootRow {
 	display: table-row;
+}
+
+.divTableRow:hover {
+    background-color: #E7E8E8;
 }
 
 .divTableCell, .divTableHead {
@@ -182,6 +190,7 @@ tfoot th {
 .divTableCell {
     border-bottom: 1px solid #DDD;
 }
+
 
 .divTableHeading {
 	display: table-header-group;
