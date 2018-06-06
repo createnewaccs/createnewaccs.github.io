@@ -54,7 +54,7 @@ footer {
 
 #reqs {
     letter-spacing: 2px;
-    color: #7B7A74;
+    color: #C1C1BD;
 }
 
 #type {
@@ -63,7 +63,7 @@ footer {
 }
 
 #typeWallet {
-    color: #7B7A74;
+    color: #C1C1BD;
     text-align: center;
 }
 
@@ -79,7 +79,7 @@ footer {
 }
 
 #countDown {
-    width: 150px;
+    width: 120px;
     text-align: center;
 }
 
@@ -87,6 +87,7 @@ footer {
 #countDown07, #countDown08, #countDown09, #countDown10, #countDown11, #countDown12,
 #countDown13, #countDown14, #countDown15, #countDown16 {
     text-align: center;
+    color: #696863;
 }
 
 #nameLink {
@@ -105,7 +106,7 @@ th {
 
 td, th {
     text-align: left;
-    padding: 15px;
+    padding: 12px;
 }
 
 td {
@@ -123,5 +124,21 @@ tr:hover {
 tfoot th {
     background-color: #FFF;
     cursor: auto;
-    height: 15px;
+    height: 12px;
+}
+
+footer {
+    position: relative;
+}
+
+#socialMedia {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    position: absolute;
 }
