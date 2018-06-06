@@ -143,3 +143,57 @@ footer {
     height: 50%;
     position: absolute;
 }
+
+
+
+
+
+
+
+
+
+.divTable{
+	display: table;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 95%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 90%;
+    position: absolute;
+    background-color: #FFF;
+    color: #7B7A74;
+}
+.divTableRow {
+	display: table-row;
+}
+
+.divTableCell, .divTableHead {
+	display: table-cell;
+    padding: 12px;
+}
+
+.divTableCell {
+    border-bottom: 1px solid #DDD;
+}
+
+.divTableHeading {
+	display: table-header-group;
+    background-color: #7B7A74;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.divTableFoot {
+	background-color: #FFF;
+	display: table-footer-group;
+}
+.divTableBody {
+	display: table-row-group;
+}
