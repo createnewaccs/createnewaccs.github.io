@@ -47,7 +47,7 @@ table {
 }
 
 #name {
-    width: 100%;
+    width: 350px;
 }
 
 #price {
@@ -176,7 +176,7 @@ tfoot th {
 
 .divTableCell, .divTableHead {
 	display: table-cell;
-    padding: 12px;
+    padding: 13px;
 }
 
 .divTableCell {
