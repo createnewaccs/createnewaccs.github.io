@@ -8,7 +8,7 @@ html, body {
     padding: 0;
 }
 
-header {
+.header {
     height: 100px;
     background-color: #7B7A74;
 }
@@ -31,14 +31,19 @@ table {
     color: #7B7A74;
 }
 
-footer {
+.footer {
     height: 300px;
     background-color: #7B7A74;
+    position: relative;
 }
 
 #number {
     width: 25px;
     text-align: right;
+}
+
+#name {
+    width: 100%;
 }
 
 #numbers {
@@ -126,10 +131,6 @@ tfoot th {
     background-color: #FFF;
     cursor: auto;
     height: 12px;
-}
-
-footer {
-    position: relative;
 }
 
 #socialMedia {
