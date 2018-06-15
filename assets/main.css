@@ -2,6 +2,47 @@
 	border: 1px solid #000 !important;
 }
 
+.divTableCell2 table {
+    width:100%;
+}
+.divTableCell2 table, th, td {
+    border-collapse: collapse;
+}
+.divTableCell2 th {
+	border-bottom: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	text-align: left;
+}
+
+.divTableCell2 td {
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+#req2 {
+	width: 150px;
+}
+
+#type2 {
+	width: 80px;
+	text-align:center;
+}
+
+#kyc2 {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#countDown2 {
+	text-align: center;
+	width: 200px;
+}
+
+#supply2 {
+	width: 150px;
+}
+
 .texttest {
 	background-color: #FFF;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -14,12 +55,23 @@
 }
 
 .texttest span2 {
-	font-size: 24px;
+	font-size: 20px;
 	color: #E7E8E8;
 }
 
 .texttest span3 {
 	color: #E9BBCA;
+}
+
+.texttest p {
+	font-size: 14px;
+	line-height: 20px;
+
+}
+
+.instructions {
+	padding: 13px;
+	border-top: 1px solid #DDD;
 }
 
 .divTable{
@@ -50,6 +102,7 @@
 
 .divTableCell, .divTableHead, .divTableCell2 {
 	display: table-cell;
+	vertical-align: middle;
     padding: 13px;
 }
 
@@ -63,7 +116,6 @@
     background-color: #7B7A74;
     font-weight: bold;
     color: #FFF;
-    cursor: pointer;
 }
 
 .divTableHeading2 {
@@ -88,15 +140,28 @@
 }
 
 #name {
-    width: 350px;
+	width: 150px;
 }
 
-#value {
+#price {
     width: 50px;
 }
 
 #req {
     width: 100px;
+}
+
+#kyc {
+	width: 50px;
+	text-align: center;
+}
+
+#supply {
+	width: 100px;
+}
+
+#kycyesno {
+	text-align: center;
 }
 
 #reqs {
@@ -130,19 +195,20 @@
     text-align: center;
 }
 
-#countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06,
+#countDown01, #countDown001, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06,
 #countDown07, #countDown08, #countDown09, #countDown10, #countDown11, #countDown12,
 #countDown13, #countDown14, #countDown15, #countDown16 {
     text-align: center;
     color: #696863;
     border: none;
+	vertical-align: middle;
 }
 
 #nameLink {
     color: #7B7A74;
 }
 
-#name, #number, #value, #love, #req, #type {
+#name, #number, #price, #love, #req, #type, #kyc, #supply {
     border-right: 1px solid #8D8B84;
 }
 
