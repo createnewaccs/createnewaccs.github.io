@@ -1,4 +1,4 @@
-*/ {
+* {
 	border: 1px solid #000 !important;
 }
 
@@ -114,18 +114,19 @@ padding-top: 30px;
     bottom: 0;
     right: 0;
     height: 100%;
-    position: absolute;
+
     background-color: #FFF;
     color: #7B7A74;
 }
 
-#name {
-  position: absolute;
-  width: 130px;
-  top: auto;
-  border-top-width: 1px;
-  margin-top: -1px;
+.divStyle {
+	height: 1000px;
+	overflow-x: auto;
+	overflow-y: visible;
+
 }
+
+
 
 .divTableRow, .divTableHeadRow, .divTableFootRow, .divTableRow2 {
 	display: table-row;
@@ -175,7 +176,8 @@ padding-top: 30px;
 }
 
 #name {
-
+	width: 130px;
+	position: absolute;
 }
 
 #price {
