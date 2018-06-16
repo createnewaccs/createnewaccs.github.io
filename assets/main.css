@@ -50,8 +50,11 @@
 .texttest {
 	background-color: #FFF;
 	font-family: 'Source Sans Pro', sans-serif;
-	padding: 30px;
 	color: #7B7A74;
+}
+
+.padd {
+	padding: 30px;
 }
 
 .texttest span {
@@ -74,9 +77,29 @@
 }
 
 .instructions {
-	padding: 13px;
-	border-top: 1px solid #DDD;
+padding-top: 30px;
+
 }
+
+.skewed-bg {
+    background: #E7E8E8;
+    color: #7B7A74;
+    padding: 43px;
+    position: relative;
+    min-height:300px;
+    overflow:hidden;
+}
+.skewed-bg::after {
+  content: '';
+  position: absolute;
+  bottom: -75%; left: 0; right: 0;
+  height:100%;
+  background:#FFF;
+  transform: skew(0deg, -40deg);
+}
+
+
+
 
 .divTable{
 	display: table;
