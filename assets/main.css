@@ -417,7 +417,6 @@ html {
 	left: 50%;
 	right: auto;
 	margin-left: -50vw;
-	overflow-x: auto;
 }
 
 #main > .inner > * > .full {
@@ -544,6 +543,7 @@ body.is-loading #main {
 	width: 100%;
 	max-width: 100%;
 	display: inline-block;
+	overflow-x: auto;
 }
 
 #container03 {
