@@ -168,7 +168,7 @@ padding-top: 30px;
 }
 
 #number {
-    width: 35px;
+    width: 15px;
     text-align: right;
 }
 
@@ -177,7 +177,7 @@ padding-top: 30px;
 }
 
 #name {
-	width: 130px;
+	width: 80px;
 }
 
 #price {
