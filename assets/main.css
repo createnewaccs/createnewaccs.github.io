@@ -114,7 +114,6 @@ padding-top: 30px;
     bottom: 0;
     right: 0;
     height: 100%;
-    position absolute;
     background-color: #FFF;
     color: #7B7A74;
 }
@@ -135,6 +134,8 @@ padding-top: 30px;
 
 .divTableCell {
     border-bottom: 1px solid #DDD;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 
