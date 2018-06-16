@@ -1,4 +1,4 @@
-* {
+*/ {
 	border: 1px solid #000 !important;
 }
 
@@ -119,9 +119,31 @@ padding-top: 30px;
     color: #7B7A74;
 }
 
+.divTable2{
+	display: table;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+	white-space: nowrap;
+    background-color: #FFF;
+    color: #7B7A74;
+}
+
 .divStyle {
 	overflow-x: auto;
 	overflow-y: visible;
+
+}
+
+#name, #number {
 
 }
 
