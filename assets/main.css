@@ -1,4 +1,4 @@
-* {
+*/ {
 	border: 1px solid #000 !important;
 }
 
@@ -116,6 +116,7 @@ padding-top: 30px;
     height: 100%;
     background-color: #FFF;
     color: #7B7A74;
+	overflow-x: auto;
 }
 
 .divTableRow, .divTableHeadRow, .divTableFootRow, .divTableRow2 {
@@ -159,7 +160,7 @@ padding-top: 30px;
 }
 
 #number {
-    width: 35px;
+
     text-align: right;
 }
 
@@ -168,24 +169,24 @@ padding-top: 30px;
 }
 
 #name {
-	width: 150px;
+
 }
 
 #price {
-    width: 60px;
+
 }
 
 #req {
-    width: 100px;
+
 }
 
 #kyc {
-	width: 50px;
+
 	text-align: center;
 }
 
 #supply {
-	width: 120px;
+
 }
 
 #kycyesno {
@@ -198,7 +199,7 @@ padding-top: 30px;
 }
 
 #type {
-    width: 50px;
+
     text-align: center;
 }
 
@@ -208,7 +209,7 @@ padding-top: 30px;
 }
 
 #love {
-    width: 80px;
+
     text-align: center;
     color: #E9BBCA;
 }
@@ -219,7 +220,7 @@ padding-top: 30px;
 }
 
 #countDown {
-    width: 120px;
+
     text-align: center;
 }
 
