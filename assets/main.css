@@ -114,13 +114,12 @@ padding-top: 30px;
     bottom: 0;
     right: 0;
     height: 100%;
-
+	white-space: nowrap;
     background-color: #FFF;
     color: #7B7A74;
 }
 
 .divStyle {
-	height: 1000px;
 	overflow-x: auto;
 	overflow-y: visible;
 
@@ -144,6 +143,8 @@ padding-top: 30px;
 
 .divTableCell {
     border-bottom: 1px solid #DDD;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -177,7 +178,6 @@ padding-top: 30px;
 
 #name {
 	width: 130px;
-	position: absolute;
 }
 
 #price {
