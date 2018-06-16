@@ -119,6 +119,14 @@ padding-top: 30px;
     color: #7B7A74;
 }
 
+#name {
+  position: absolute;
+  width: 130px;
+  top: auto;
+  border-top-width: 1px;
+  margin-top: -1px;
+}
+
 .divTableRow, .divTableHeadRow, .divTableFootRow, .divTableRow2 {
 	display: table-row;
 }
@@ -167,7 +175,7 @@ padding-top: 30px;
 }
 
 #name {
-	width: 150px;
+
 }
 
 #price {
