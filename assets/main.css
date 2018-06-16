@@ -95,7 +95,7 @@ padding-top: 30px;
   bottom: -75%; left: 0; right: 0;
   height:100%;
   background:#FFF;
-  transform: skew(0deg, -40deg);
+  transform: skew(0deg, -8deg);
 }
 
 
@@ -157,8 +157,8 @@ padding-top: 30px;
 	display: table-row-group;
 }
 
-#number {
-    width: 35px;
+#number {min-wi
+    max-width: 35px;
     text-align: right;
 }
 
@@ -167,24 +167,24 @@ padding-top: 30px;
 }
 
 #name {
-	width: 150px;
+	min-width: 150px;
 }
 
 #price {
-    width: 60px;
+    min-width: 60px;
 }
 
 #req {
-    width: 100px;
+    min-width: 100px;
 }
 
 #kyc {
-	width: 50px;
+	min-width: 50px;
 	text-align: center;
 }
 
 #supply {
-	width: 120px;
+	min-width: 120px;
 }
 
 #kycyesno {
@@ -197,7 +197,7 @@ padding-top: 30px;
 }
 
 #type {
-    width: 50px;
+    min-width: 50px;
     text-align: center;
 }
 
@@ -207,7 +207,7 @@ padding-top: 30px;
 }
 
 #love {
-    width: 80px;
+    min-width: 80px;
     text-align: center;
     color: #E9BBCA;
 }
@@ -218,7 +218,7 @@ padding-top: 30px;
 }
 
 #countDown {
-    width: 120px;
+    min-width: 120px;
     text-align: center;
 }
 
