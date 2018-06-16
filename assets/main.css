@@ -98,25 +98,7 @@ padding-top: 30px;
   transform: skew(0deg, -8deg);
 }
 
-.divStyle {
-	height: 1000px;
-	width: 100%;
-	position: relative;
-	overflow-x: auto;
-	overflow-y: visible;
-	padding: 0;
-}
 
- #number {
-	position: absolute;
-  width: 35px;
-  left: 0;
-  top: auto;
-  border-top-width: 1px;
-  /*only relevant for first row*/
-  margin-top: -1px;
-  /*compensate for top border*/
-}
 
 
 .divTable{
@@ -132,7 +114,7 @@ padding-top: 30px;
     bottom: 0;
     right: 0;
     height: 100%;
-	position: absolute;
+    position: absolute;
     background-color: #FFF;
     color: #7B7A74;
 }
@@ -176,34 +158,33 @@ padding-top: 30px;
 }
 
 #number {
+    width: 35px;
     text-align: right;
 }
-
-
 
 #numbers {
     text-align: right;
 }
 
 #name {
-
+	width: 150px;
 }
 
 #price {
-
+    width: 60px;
 }
 
 #req {
-
+    width: 100px;
 }
 
 #kyc {
-
+	width: 50px;
 	text-align: center;
 }
 
 #supply {
-
+	width: 120px;
 }
 
 #kycyesno {
@@ -216,7 +197,7 @@ padding-top: 30px;
 }
 
 #type {
-
+    width: 50px;
     text-align: center;
 }
 
@@ -226,7 +207,7 @@ padding-top: 30px;
 }
 
 #love {
-
+    width: 80px;
     text-align: center;
     color: #E9BBCA;
 }
@@ -237,7 +218,7 @@ padding-top: 30px;
 }
 
 #countDown {
-
+    width: 120px;
     text-align: center;
 }
 
