@@ -364,7 +364,6 @@ html {
 	padding: 3rem 3rem;
 	max-width: 100%;
 	width: 100rem;
-	overflow-x: auto;
 }
 
 #main > .inner > header {
@@ -418,6 +417,7 @@ html {
 	left: 50%;
 	right: auto;
 	margin-left: -50vw;
+	overflow-x: auto;
 }
 
 #main > .inner > * > .full {
