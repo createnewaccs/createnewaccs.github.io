@@ -157,8 +157,8 @@ padding-top: 30px;
 	display: table-row-group;
 }
 
-#number {min-wi
-    max-width: 35px;
+#number {
+    width: 35px;
     text-align: right;
 }
 
@@ -167,24 +167,24 @@ padding-top: 30px;
 }
 
 #name {
-	min-width: 150px;
+	width: 150px;
 }
 
 #price {
-    min-width: 60px;
+    width: 60px;
 }
 
 #req {
-    min-width: 100px;
+    width: 100px;
 }
 
 #kyc {
-	min-width: 50px;
+	width: 50px;
 	text-align: center;
 }
 
 #supply {
-	min-width: 120px;
+	width: 120px;
 }
 
 #kycyesno {
@@ -197,7 +197,7 @@ padding-top: 30px;
 }
 
 #type {
-    min-width: 50px;
+    width: 50px;
     text-align: center;
 }
 
@@ -207,7 +207,7 @@ padding-top: 30px;
 }
 
 #love {
-    min-width: 80px;
+    width: 80px;
     text-align: center;
     color: #E9BBCA;
 }
@@ -218,7 +218,7 @@ padding-top: 30px;
 }
 
 #countDown {
-    min-width: 120px;
+    width: 120px;
     text-align: center;
 }
 
