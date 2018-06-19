@@ -24,7 +24,14 @@
   background: #7B7A74;
   color: #FFF;
   font-weight: bold;
+  padding: 10px;
   top: 0;
+}
+
+#numbers {
+    width: 100px;
+    min-width: 100px;
+    text-align: right;
 }
 
 .grid-col--fixed-left {
@@ -35,5 +42,5 @@
 }
 
 .grid-item {
-
+  padding: 15px;
 }
