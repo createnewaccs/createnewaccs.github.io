@@ -1,4 +1,4 @@
-*/ {
+* {
   border: 1px solid #000 !important;
 }
 
@@ -64,11 +64,6 @@
     min-width: 200px;
 }
 
-#KYC {
-    width: 100px;
-    min-width: 100px;
-}
-
 #types {
     width: 100px;
     min-width: 100px;
@@ -77,6 +72,11 @@
 #rating {
     width: 120px;
     min-width: 120px;
+}
+
+#countDowns {
+    width: 200px;
+    min-width: 150px;
 }
 
 .grid-col--fixed-left {
