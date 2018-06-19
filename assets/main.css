@@ -1,4 +1,4 @@
-*/ {
+* {
 	border: 1px solid #000 !important;
 }
 
@@ -141,10 +141,12 @@ padding-top: 30px;
 	overflow-x: auto;
 	overflow-y: visible;
 
+
 }
 
-#name, #number {
-
+#nameLink {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -162,6 +164,13 @@ padding-top: 30px;
 	vertical-align: middle;
     padding: 13px;
 }
+
+.divTableHead:nth-child(2) {
+	position: absolute;
+width: auto;
+}
+
+
 
 .divTableCell {
     border-bottom: 1px solid #DDD;
@@ -190,7 +199,7 @@ padding-top: 30px;
 }
 
 #number {
-    width: 15px;
+	width: 30px;
     text-align: right;
 }
 
@@ -199,15 +208,15 @@ padding-top: 30px;
 }
 
 #name {
-	width: 80px;
+
 }
 
 #price {
-    width: 60px;
+    width: 100px;
 }
 
 #req {
-    width: 100px;
+    width: 300px;
 }
 
 #kyc {
@@ -239,7 +248,7 @@ padding-top: 30px;
 }
 
 #love {
-    width: 80px;
+    width: 120px;
     text-align: center;
     color: #E9BBCA;
 }
