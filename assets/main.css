@@ -14,6 +14,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   background-color: white;
+  width: 100%;
 }
 .grid-col {
     width: 100%;
@@ -38,11 +39,44 @@
 #names {
     width: 100px;
     min-width: 100px;
+}
+
+#names, #prices, #tsupply, #reqs {
     text-align: left;
 }
 
 #KYC, #types, #rating, #countDowns {
     text-align: center;
+}
+
+#prices {
+    width: 100px;
+    min-width: 100px;
+}
+
+#tsupply {
+    width: 200px;
+    min-width: 200px;
+}
+
+#reqs {
+    width: 200px;
+    min-width: 200px;
+}
+
+#KYC {
+    width: 100px;
+    min-width: 100px;
+}
+
+#types {
+    width: 100px;
+    min-width: 100px;
+}
+
+#rating {
+    width: 120px;
+    min-width: 120px;
 }
 
 .grid-col--fixed-left {
