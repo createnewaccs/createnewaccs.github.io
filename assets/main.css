@@ -1,4 +1,4 @@
-*/ {
+* {
   border: 1px solid #000 !important;
 }
 
@@ -33,7 +33,6 @@
 #numbers {
     width: 50px;
     min-width: 50px;
-    text-align: center;
 }
 
 #names {
@@ -45,7 +44,7 @@
     text-align: left;
 }
 
-#KYC, #types, #rating, #countDowns {
+#numbers, #KYC, #types, #rating, #countDowns {
     text-align: center;
 }
 
