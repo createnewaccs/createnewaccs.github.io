@@ -1,287 +1,79 @@
-* {
-	border: 1px solid #000 !important;
+*/ {
+  border: 1px solid #000 !important;
 }
 
-.divTableCell2 table {
-    width:100%;
+.grid-container {
+  display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
+  overflow: auto;
+  margin: auto;
+  width: 100%;
 }
-.divTableCell2 table, th, td {
-    border-collapse: collapse;
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  background-color: white;
 }
-.divTableCell2 th {
-	border-bottom: 1px solid #DDD;
-	border-top: 1px solid #DDD;
-	text-align: left;
-}
-
-.divTableCell2 td {
-	padding-bottom: 8px;
-	padding-top: 8px;
-}
-
-#nameCoin {
-	width: 450px;
-}
-
-#req2 {
-	width: 150px;
-}
-
-#type2 {
-	width: 80px;
-	text-align:center;
-}
-
-#kyc2 {
-	width: 80px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#countDown2 {
-	text-align: center;
-	width: 250px;
-}
-
-#supply2 {
-	width: 200px;
-}
-
-.texttest {
-	background-color: #FFF;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #7B7A74;
-}
-
-.padd {
-	padding: 30px;
-}
-
-.texttest span {
-	font-size: 28px;
-}
-
-.texttest span2 {
-	font-size: 20px;
-	color: #E7E8E8;
-}
-
-.texttest span3 {
-	color: #E9BBCA;
-}
-
-.texttest p {
-	font-size: 14px;
-	line-height: 20px;
-
-}
-
-.instructions {
-padding-top: 30px;
-
-}
-
-.skewed-bg {
-    background: #E7E8E8;
-    color: #7B7A74;
-    padding: 43px;
-    position: relative;
-    min-height:300px;
-    overflow:hidden;
-}
-.skewed-bg::after {
-  content: '';
-  position: absolute;
-  bottom: -75%; left: 0; right: 0;
-  height:100%;
-  background:#FFF;
-  transform: skew(0deg, -8deg);
-}
-
-
-
-
-.divTable{
-	display: table;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 1150px;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-	white-space: nowrap;
-    background-color: #FFF;
-    color: #7B7A74;
-}
-
-.divTable2{
-	display: table;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    border-collapse: collapse;
-    table-layout: fixed;
+.grid-col {
     width: 100%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-	white-space: nowrap;
-    background-color: #FFF;
-    color: #7B7A74;
 }
 
-.divStyle {
-	overflow-x: auto;
-	overflow-y: visible;
-
-
-}
-
-#numbers, #nameLink {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-
-
-.divTableRow, .divTableHeadRow, .divTableFootRow, .divTableRow2 {
-	display: table-row;
-}
-
-.divTableRow:hover {
-    background-color: #E7E8E8;
-}
-
-.divTableCell, .divTableHead, .divTableCell2 {
-	display: table-cell;
-	vertical-align: middle;
-    padding: 13px;
-}
-
-.divTableHead:first-child, .divTableHead:nth-child(2) {
-	position: sticky;
-}
-
- {
-
-}
-
-
-
-.divTableCell {
-    border-bottom: 1px solid #DDD;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-
-.divTableHeading {
-	display: table-header-group;
-    background-color: #7B7A74;
-    font-weight: bold;
-    color: #FFF;
-}
-
-.divTableHeading2 {
-	display: table-header-group;
-}
-
-.divTableFoot {
-	background-color: #FFF;
-	display: table-footer-group;
-}
-.divTableBody {
-	display: table-row-group;
-}
-
-#number {
-	width: 30px;
-    text-align: right;
+.grid-item--header {
+  position: sticky;
+  position: -webkit-sticky;
+  background: #7B7A74;
+  color: #FFF;
+  font-weight: bold;
+  padding: 10px;
+  top: 0;
 }
 
 #numbers {
-    text-align: right;
-}
-
-#name {
-
-}
-
-#price {
-    width: 100px;
-}
-
-#req {
-    width: 300px;
-}
-
-#kyc {
-	width: 50px;
-	text-align: center;
-}
-
-#supply {
-	width: 120px;
-}
-
-#kycyesno {
-	text-align: center;
-}
-
-#reqs {
-    letter-spacing: 2px;
-    color: #C1C1BD;
-}
-
-#type {
     width: 50px;
+    min-width: 50px;
     text-align: center;
 }
 
-#typeWallet {
-    color: #C1C1BD;
+#names {
+    width: 100px;
+    min-width: 100px;
+    text-align: left;
+}
+
+#KYC, #types, #rating, #countDowns {
     text-align: center;
 }
 
-#love {
-    width: 120px;
-    text-align: center;
-    color: #E9BBCA;
+.grid-col--fixed-left {
+  position: sticky;
+  left: 0;
+  z-index: 9998;
+  background: white;
 }
 
-#loved {
-    letter-spacing: 2px;
-    color: #E9BBCA;
+.grid-col--fixed-left2 {
+  position: sticky;
+  left: 50px;
+  z-index: 9998;
+  background: white;
 }
 
-#countDown {
-    width: 120px;
-    text-align: center;
+.grid-item {
+  padding: 20px;
+  border-bottom: 1px solid #DDD;
 }
 
-#countDown01, #countDown001, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06,
-#countDown07, #countDown08, #countDown09, #countDown10, #countDown11, #countDown12,
-#countDown13, #countDown14, #countDown15, #countDown16 {
-    text-align: center;
-    color: #696863;
-    border: none;
-	vertical-align: middle;
-}
 
-#nameLink {
-    color: #7B7A74;
-}
 
-#name, #number, #price, #love, #req, #type, #kyc, #supply {
-    border-right: 1px solid #8D8B84;
-}
+
+
+
+
+
+
+
+
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}mark{background-color:transparent;color:inherit}input::-moz-focus-inner{border:0;padding:0}input[type="text"],input[type="email"],select,textarea{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none}
 
