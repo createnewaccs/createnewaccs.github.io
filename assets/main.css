@@ -1,4 +1,4 @@
-* {
+*/ {
   border: 1px solid #000 !important;
 }
 
@@ -7,6 +7,10 @@
   overflow: auto;
   margin: auto;
   width: 100%;
+
+
+
+
 }
 
 .grid {
@@ -15,7 +19,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   background-color: white;
-  grid-template-rows: auto;
+
 }
 
 .grid-col {
@@ -113,8 +117,7 @@
 
 .grid-item {
   padding: 20px;
-  height: 50px;
-  min-height: 50px;
+  
   border-bottom: 1px solid #DDD;
 }
 
