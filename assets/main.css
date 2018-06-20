@@ -19,8 +19,8 @@
 .grid {
   display: flex;
   flex-wrap: nowrap;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
   background-color: white;
 }
 
@@ -35,7 +35,7 @@
   color: #FFF;
   padding: 18px;
   top: 0;
-  
+
 }
 
 #numbers {
@@ -58,6 +58,10 @@
 
 #headerRating {
     color: #E9BBCA;
+}
+
+#headerName, #headerPrice, #headerRating, #headerReq, #headerSupply, #headerKYC, #headerType, #headerNumber {
+    border-right: 1px solid #8D8B84;
 }
 
 #numbers, #KYC, #types, #rating, #countDowns {
@@ -108,7 +112,7 @@
 
 .grid-col--fixed-left2 {
   position: sticky;
-  left: 50px;
+  left: 70px;
   z-index: 9998;
   background: white;
 }
