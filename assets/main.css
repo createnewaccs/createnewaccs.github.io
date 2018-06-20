@@ -1,4 +1,4 @@
-* {
+*/ {
 	border: 1px solid #000 !important;
 }
 
@@ -102,7 +102,7 @@ padding-top: 30px;
 
 
 .divTable{
-	display: grid;
+	display: table;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     border-collapse: collapse;
@@ -141,12 +141,10 @@ padding-top: 30px;
 	overflow-x: auto;
 	overflow-y: visible;
 
-
 }
 
-#numbers, #nameLink {
-	padding-top: 20px;
-	padding-bottom: 20px;
+#name, #number {
+
 }
 
 
@@ -164,16 +162,6 @@ padding-top: 30px;
 	vertical-align: middle;
     padding: 13px;
 }
-
-.divTableHead:first-child, .divTableHead:nth-child(2) {
-	position: sticky;
-}
-
- {
-
-}
-
-
 
 .divTableCell {
     border-bottom: 1px solid #DDD;
@@ -202,7 +190,7 @@ padding-top: 30px;
 }
 
 #number {
-	width: 30px;
+    width: 15px;
     text-align: right;
 }
 
@@ -211,15 +199,15 @@ padding-top: 30px;
 }
 
 #name {
-
+	width: 80px;
 }
 
 #price {
-    width: 100px;
+    width: 60px;
 }
 
 #req {
-    width: 300px;
+    width: 100px;
 }
 
 #kyc {
@@ -251,7 +239,7 @@ padding-top: 30px;
 }
 
 #love {
-    width: 120px;
+    width: 80px;
     text-align: center;
     color: #E9BBCA;
 }
