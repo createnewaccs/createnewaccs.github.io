@@ -1,4 +1,4 @@
-* {
+*/ {
   border: 1px solid #000 !important;
 }
 
@@ -7,24 +7,25 @@
   overflow: auto;
   margin: auto;
   width: 100%;
-  top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  top: 0;
   height: 100%;
+
+
 }
+
 .grid {
   display: flex;
   flex-wrap: nowrap;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
   background-color: white;
-  width: 100%;
-  height: 100%;
 }
+
 .grid-col {
     width: 100%;
-    height: 100%;
 }
 
 .grid-item--header {
@@ -34,11 +35,12 @@
   color: #FFF;
   padding: 18px;
   top: 0;
+  
 }
 
 #numbers {
-    width: 50px;
-    min-width: 50px;
+    width: 70px;
+    min-width: 70px;
 }
 
 #names {
@@ -48,6 +50,14 @@
 
 #names, #prices, #tsupply, #reqs {
     text-align: left;
+}
+
+#names, #prices, #tsupply, #reqs, #numbers, #KYC, #types, #rating {
+    color: #7B7A74;
+}
+
+#headerRating {
+    color: #E9BBCA;
 }
 
 #numbers, #KYC, #types, #rating, #countDowns {
@@ -80,12 +90,13 @@
 }
 
 #countDowns {
-    width: 250px;
-    min-width: 250px;
+    width: 230px;
+    min-width: 230px;
 }
 
-#countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06 {
-
+#countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06, #countDown07, #countDown08,
+#countDown09, #countDown10, #countDown11, #countDown12, #countDown13 {
+    border-bottom: none;
 }
 
 .grid-col--fixed-left {
@@ -107,7 +118,6 @@
   height: 50px;
   min-height: 50px;
   border-bottom: 1px solid #DDD;
-
 }
 
 .grid-item:last-child {
