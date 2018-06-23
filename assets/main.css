@@ -18,12 +18,15 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
+  height: auto;
+  min-height: 100% !important;
 }
 
 .grid-container2 {
     display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
     overflow: auto;
     width: 100%;
+
 }
 
 .grid {
@@ -32,6 +35,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   background-color: white;
+
 }
 
 .grid2 {
@@ -55,14 +59,14 @@
   background: #7B7A74;
   color: #FFF;
   padding: 18px;
-
-
+  top: 0;
 
 }
 
 .grid-item--header2 {
     padding: 18px;
     font-size: 20px;
+    top: 0;
 }
 
 .grid-item--header2 #abv {
@@ -148,7 +152,6 @@
 #countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06, #countDown07, #countDown08,
 #countDown09, #countDown10, #countDown11, #countDown12, #countDown13, #countDown14, #countDown15, #countDown16 {
     color: #000;
-    border: none;
 }
 
 .grid-col--fixed-left {
@@ -167,7 +170,6 @@
 
 .grid-item {
   padding: 20px;
-height: 50px;
 
   border-bottom: 1px solid #E7E8E8;
 }
