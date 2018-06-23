@@ -338,6 +338,7 @@ html {
 	-webkit-flex-shrink: 0;
 	-ms-flex-shrink: 0;
 	flex-shrink: 0;
+	text-align: center;
 	background-color: transparent;
 	-moz-transition: opacity 1s ease-in-out 0s;
 	-webkit-transition: opacity 1s ease-in-out 0s;
@@ -538,9 +539,10 @@ body.is-loading #main {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
+	width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
-	width: 100%;
+	min-height: 50rem;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -578,7 +580,7 @@ body.is-loading #main {
 	display: flex;
 	width: 100%;
 	min-height: 20rem;
-    -moz-align-items: flex-end;
+	-moz-align-items: flex-end;
 	-webkit-align-items: flex-end;
 	-ms-align-items: flex-end;
 	align-items: flex-end;
@@ -633,7 +635,6 @@ body.is-loading #main {
 	overflow: hidden;
 	max-width: 100%;
 	display: block;
-	text-align: center;
 }
 
 .image a, .image span {
@@ -739,6 +740,68 @@ h1 .li, h2 .li, h3 .li, p .li {
 #buttons01 .n01 {
 	background-color: #000000;
 	color: #FFFFFF;
+}
+
+.icons {
+	cursor: default;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+.icons li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icons li a {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.icons li a svg {
+	display: block;
+	-moz-transition: fill 0.25s ease;
+	-webkit-transition: fill 0.25s ease;
+	-ms-transition: fill 0.25s ease;
+	transition: fill 0.25s ease;
+}
+
+.icons li a .label {
+	display: none;
+}
+
+#icons01 {
+	font-size: 1.25em;
+	width: calc(100% + 0.75rem);
+	margin-left: -0.375rem;
+}
+
+#icons01 li {
+	margin: 0.375rem;
+}
+
+#icons01 li a {
+	width: 1em;
+	height: 1em;
+}
+
+#icons01 li a svg {
+	width: 100%;
+	height: 100%;
+}
+
+#icons01 .n01 svg {
+	fill: #000000;
 }
 
 @media (max-width: 1920px) {
@@ -860,6 +923,10 @@ h1 .li, h2 .li, h3 .li, p .li {
 	#container03 > .inner {
 		padding: 2rem 2rem;
 		max-width: 100%;
+	}
+
+	#container03 {
+		min-height: 37.5rem;
 	}
 
 	#container03 > .inner > * {
@@ -1037,6 +1104,10 @@ h1 .li, h2 .li, h3 .li, p .li {
 		padding: 1.5rem 1.5rem;
 	}
 
+	#container03 {
+		min-height: 25rem;
+	}
+
 	#container03 > .inner > * {
 		margin-top: 0.5625rem;
 		margin-bottom: 0.5625rem;
@@ -1082,5 +1153,14 @@ h1 .li, h2 .li, h3 .li, p .li {
 		margin: 0.28125rem;
 		max-width: 100%;
 		margin: 0.5625rem 0;
+	}
+
+	#icons01 {
+		width: calc(100% + 0.5625rem);
+		margin-left: -0.28125rem;
+	}
+
+	#icons01 li {
+		margin: 0.28125rem;
 	}
 }
