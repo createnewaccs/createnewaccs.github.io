@@ -198,16 +198,21 @@
 }
 
 .copyright {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     background-color: #93928D;
 }
 
-.copyright > .fleft {
+.fleft, .fright {
     float: left;
 }
 
-.copyright > .fright {
-    float: right;
+.fleft {
+    width: 10%;
+}
+
+.fright {
+    width: 90%;
+    text-align: right;
 }
 
 #space {
@@ -215,7 +220,7 @@
 }
 
 .socialMedias {
-    font-size: 40px;
+    font-size: 35px;
     padding: 1rem 0rem;
     color: #FFF;
     letter-spacing: 10px;
