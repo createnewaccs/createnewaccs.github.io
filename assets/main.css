@@ -2,10 +2,28 @@
   border: 1px solid #000 !important;
 }
 
+#green {
+    color: #B7EDAA;
+}
+
+#orange {
+    color: #EBD2AD;
+}
+
+#red {
+    color: #E9BBCA;
+}
+
 .grid-container {
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
+}
+
+.grid-container2 {
+    display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
+    overflow: auto;
+    width: 100%;
 }
 
 .grid {
@@ -16,7 +34,16 @@
   background-color: white;
 }
 
-.grid-col {
+.grid2 {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    background-color: white;
+    padding: 40px;
+}
+
+.grid-col, .grid-col2 {
     width: 100%;
 
 
@@ -33,6 +60,24 @@
 
 }
 
+.grid-item--header2 {
+    padding: 18px;
+    font-size: 20px;
+    top: 0;
+}
+
+.grid-item--header2 #abv {
+    color: #E7E8E8;
+}
+
+.grid-item--header2 #rate {
+    color: #E9BBCA;
+}
+
+.grid-item--header2 #curr {
+    font-size: 11px;
+}
+
 #numbers {
     width: 70px;
     min-width: 70px;
@@ -43,8 +88,16 @@
     min-width: 100px;
 }
 
+#removeUnderline01 {
+    text-decoration: none;
+}
+
 #names, #prices, #tsupply, #reqs {
     text-align: left;
+}
+
+#names01:hover, #removeUnderline01:hover {
+    color: #000;
 }
 
 #names, #prices, #tsupply, #reqs, #numbers, #KYC, #types, #rating {
@@ -96,6 +149,7 @@
 #countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06, #countDown07, #countDown08,
 #countDown09, #countDown10, #countDown11, #countDown12, #countDown13, #countDown14, #countDown15, #countDown16 {
     border-bottom: none;
+    color: #000;
 }
 
 .grid-col--fixed-left {
@@ -119,6 +173,10 @@
   border-bottom: 1px solid #DDD;
 }
 
+.grid-item2 {
+    padding: 18px;
+}
+
 .grid-item:last-child {
     border: none;
 }
@@ -126,8 +184,10 @@
 
 
 
-
-
+.media-container {
+    margin: auto;
+    width: 50%;
+}
 
 
 
@@ -444,6 +504,8 @@ body.is-loading #main {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
 	width: 100%;
 	-moz-align-items: center;
 	-webkit-align-items: center;

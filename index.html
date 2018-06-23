@@ -22,6 +22,9 @@
 				<section id="home-section">
 					<div id="container03" class="container full screen">
 						<div class="inner">
+                            <div class"key">
+                                <i class="fas fa-square-full" id="green"></i> more than a week left <i class="fas fa-square-full" id="orange"></i> ending soon <i class="fas fa-square-full" id="red"></i> ended
+                            </div>
     <div class="grid-container">
       <div class="grid">
         <div class="grid-col grid-col--fixed-left" id="numbers">
@@ -76,51 +79,6 @@
           <div class="grid-item">
             16
           </div>
-          <div class="grid-item">
-            2
-          </div>
-          <div class="grid-item">
-            3
-          </div>
-          <div class="grid-item">
-            4
-          </div>
-          <div class="grid-item">
-            5
-          </div>
-          <div class="grid-item">
-            6
-          </div>
-          <div class="grid-item">
-            7
-          </div>
-          <div class="grid-item">
-            8
-          </div>
-          <div class="grid-item">
-            9
-          </div>
-          <div class="grid-item">
-            10
-          </div>
-          <div class="grid-item">
-            11
-          </div>
-          <div class="grid-item">
-            12
-          </div>
-          <div class="grid-item">
-            13
-          </div>
-          <div class="grid-item">
-            14
-          </div>
-          <div class="grid-item">
-            15
-          </div>
-          <div class="grid-item">
-            16
-          </div>
         </div>
 
         <div class="grid-col grid-col--fixed-left2" id="names">
@@ -128,7 +86,7 @@
             Name
           </div>
           <div class="grid-item">
-            CyberVein
+            <a href="#cybervein" id="names01">CyberVein</a>
           </div>
           <div class="grid-item">
             ...
@@ -182,7 +140,7 @@
             Price
           </div>
           <div class="grid-item">
-            ~$0.06
+            <a href="#cybervein" id="removeUnderline01">$0.06</a>
           </div>
           <div class="grid-item">
             ?
@@ -236,7 +194,7 @@
             Total Supply
           </div>
           <div class="grid-item">
-            2,100,000,000 CVT
+            <a href="#cybervein" id="removeUnderline01">2,100,000,000 CVT</a>
           </div>
           <div class="grid-item">
             ?
@@ -560,9 +518,54 @@
 </div>
 </div>
 </section>
+<section id="cybervein-section">
+    <div id="container03" class="container full screen">
+        <div class="inner">
+            <div class="grid-container2">
+              <div class="grid2">
+                <div class="grid-col2 grid-col--fixed-left">
+                  <div class="grid-item--header2">
+                    Cybervein <span id="abv">(CVT)</span> <span id="rate"><i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i></span>
+                  </div>
+                  <div class="grid-item2">
+                    <a href="#">Website</a>
+                  </div>
+                  <div class="grid-item2">
+                    <a href="#">Whitepaper</a>
+                  </div>
+                  <div class="grid-item2">
+                    <a href="#">Bitcointalk</a>
+                  </div>
+                  <div class="grid-item2">
+                    <a href="#">Telegram</a>
+                  </div>
+                  <div class="grid-item2">
+                    <a href="#">Reddit</a>
+                  </div>
+                  <div class="grid-item2">
+                    <a href="#">YouTube</a>
+                  </div>
+                </div>
+                <div class="grid-col2">
+                  <div class="grid-item--header2">
+                    $0.06 <span id="curr">USD</span>
+                  </div>
+                  <div class="grid-item2">
+                    ?
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer id="footer">
 <div id="container02" class="container full screen">
     <div class="inner">
+        <div class="media-container">
+            <div>a
+            </div>
+        </div>
     </div>
 </div>
 </footer>
@@ -583,8 +586,11 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if (days < 7) {
+    if (days < 3) {
         document.getElementById(elementId).style.backgroundColor = "#E9BBCA";
+    }
+    else if (days > 3 && days < 7) {
+        document.getElementById(elementId).style.backgroundColor = "#EBD2AD";
     }
     else {
         document.getElementById(elementId).style.backgroundColor = "#B7EDAA";
@@ -602,19 +608,19 @@
     createCountDown("countDown01", "2018-07-05 24:00:00")
     createCountDown("countDown02", "2018-07-04 24:00:00")
     createCountDown("countDown03", "2018-07-05 24:00:00")
-    createCountDown("countDown04", "2018-06-12 24:00:00")
+    createCountDown("countDown04", "2018-06-27 24:00:00")
     createCountDown("countDown05", "2018-07-05 24:00:00")
-    createCountDown("countDown06", "2018-06-12 24:00:00")
+    createCountDown("countDown06", "2018-06-27 24:00:00")
     createCountDown("countDown07", "2018-06-12 24:00:00")
     createCountDown("countDown08", "2018-07-04 24:00:00")
     createCountDown("countDown09", "2018-07-05 24:00:00")
     createCountDown("countDown10", "2018-06-12 24:00:00")
     createCountDown("countDown11", "2018-07-05 24:00:00")
-    createCountDown("countDown12", "2018-06-12 24:00:00")
+    createCountDown("countDown12", "2018-06-27 24:00:00")
     createCountDown("countDown13", "2018-06-12 24:00:00")
     createCountDown("countDown14", "2018-07-05 24:00:00")
     createCountDown("countDown15", "2018-06-12 24:00:00")
-    createCountDown("countDown16", "2018-06-12 24:00:00")
+    createCountDown("countDown16", "2018-06-27 24:00:00")
 </script>
 </body>
 </html>
