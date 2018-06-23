@@ -18,7 +18,8 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
-
+  height: 100vh;
+  min-height: 100vh;
 }
 
 .grid-container2 {
@@ -193,41 +194,29 @@
 }
 
 .donate {
-    padding: 2rem 0rem;
+    padding: 1rem 2rem;
     background-color: #878680;
 }
 
 .copyright {
-    padding: 2rem 2rem;
-    background-color: #93928D;
-}
-
-.fleft, .fright {
-    float: left;
-}
-
-.fleft {
-    width: 10%;
-}
-
-.fright {
-    width: 90%;
-    text-align: right;
+    padding: 1rem 2rem;
+    background-color: #9F9E99;
 }
 
 #space {
     padding-left: 20px;
 }
 
+.fleft {
+    padding: 2rem 0rem;
+    background-color: #ABAAA6;
+}
+
 .socialMedias {
     font-size: 35px;
-    padding: 1rem 0rem;
+    padding: 4rem 0rem;
     color: #FFF;
     letter-spacing: 10px;
-    -moz-align-items: flex-end;
-	-webkit-align-items: flex-end;
-	-ms-align-items: flex-end;
-	align-items: flex-end;
 }
 
 .socialMedias a:hover {
