@@ -579,14 +579,14 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if (days < 3) {
-        document.getElementById(elementId).style.backgroundColor = "#E9BBCA";
+    if (days > 7) {
+        document.getElementById(elementId).style.backgroundColor = "#B7EDAA";
     }
     else if (days > 3 && days < 7) {
         document.getElementById(elementId).style.backgroundColor = "#EBD2AD";
     }
     else {
-        document.getElementById(elementId).style.backgroundColor = "#B7EDAA";
+        document.getElementById(elementId).style.backgroundColor = "#E9BBCA";
     }
 
     document.getElementById(elementId).innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
@@ -609,7 +609,7 @@
     createCountDown("countDown09", "2018-07-05 24:00:00")
     createCountDown("countDown10", "2018-06-12 24:00:00")
     createCountDown("countDown11", "2018-07-05 24:00:00")
-    createCountDown("countDown12", "2018-06-27 24:00:00")
+    createCountDown("countDown12", "2018-06-28 24:00:00")
     createCountDown("countDown13", "2018-06-12 24:00:00")
     createCountDown("countDown14", "2018-07-05 24:00:00")
     createCountDown("countDown15", "2018-06-12 24:00:00")

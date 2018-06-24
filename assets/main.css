@@ -20,6 +20,8 @@
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+  position: relative;
+
 }
 
 .grid-container2 {
@@ -35,7 +37,8 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   background-color: white;
-
+  position: absolute;
+  width: 100%;
 }
 
 .grid2 {
