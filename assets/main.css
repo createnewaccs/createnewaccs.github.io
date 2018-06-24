@@ -1,3 +1,8 @@
+@media only screen
+and (min-device-height : 100vh) {
+/* Styles */
+}
+
 */ {
   border: 1px solid #000 !important;
 }
@@ -18,9 +23,6 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  position: relative;
 
 }
 
@@ -37,8 +39,6 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   background-color: white;
-  position: absolute;
-  width: 100%;
 }
 
 .grid2 {
@@ -61,15 +61,16 @@
   position: -webkit-sticky;
   background: #7B7A74;
   color: #FFF;
-  padding: 18px;
+  padding: 20px;
   top: 0;
 
 }
 
 .grid-item--header2 {
-    padding: 18px;
+    padding: 20px;
     font-size: 20px;
     top: 0;
+    text-align: left;
 }
 
 .grid-item--header2 #abv {
@@ -173,12 +174,12 @@
 
 .grid-item {
   padding: 20px;
-
   border-bottom: 1px solid #E7E8E8;
 }
 
 .grid-item2 {
     padding: 18px;
+    text-align: left;
 }
 
 .grid-item:last-child {
@@ -188,43 +189,6 @@
 
 
 
-.media-container {
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    color: #E7E8E8;
-    text-align: center;
-}
-
-.donate {
-    padding: 2rem 0rem;
-    background-color: #878680;
-}
-
-.copyright {
-    padding: 1rem 2rem;
-    background-color: #9F9E99;
-}
-
-#space {
-    padding-left: 20px;
-}
-
-.fleft {
-    padding: 2rem 0rem;
-    background-color: #ABAAA6;
-}
-
-.socialMedias {
-    font-size: 35px;
-    padding: 3rem 0rem;
-    color: #FFF;
-    letter-spacing: 10px;
-}
-
-.socialMedias a:hover {
-    color: #E7E8E8;
-}
 
 
 
