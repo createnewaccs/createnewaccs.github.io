@@ -18,6 +18,9 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
+  min-height: 100vh;
+
+
 }
 
 .grid-container2 {
@@ -38,6 +41,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   background-color: white;
+
 }
 
 .grid2 {
@@ -235,7 +239,7 @@ body {
 	word-wrap: break-word;
 	overflow-x: hidden;
 	background-color: #E7E8E8;
-    
+
 }
 
 u {
@@ -537,7 +541,6 @@ body.is-loading #main {
 	width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
-	min-height: 50rem;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
