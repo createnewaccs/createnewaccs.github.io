@@ -118,13 +118,13 @@
 }
 
 #prices {
-    width: 100px;
-    min-width: 100px;
+    width: 80px;
+    min-width: 80px;
 }
 
 #tsupply {
-    width: 200px;
-    min-width: 200px;
+    width: 180px;
+    min-width: 180px;
 }
 
 #reqs {
