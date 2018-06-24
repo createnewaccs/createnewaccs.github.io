@@ -76,12 +76,13 @@
 }
 
 #numbers {
-    width: 70px;
-    min-width: 70px;
+    width: 60px;
+    min-width: 60px;
 }
 
 #names {
-
+    width: 190px;
+    min-width: 190px;
 }
 
 #removeUnderline01 {
@@ -156,7 +157,7 @@
 
 .grid-col--fixed-left2 {
   position: sticky;
-  left: 70px;
+  left: 60px;
   z-index: 9998;
   background: white;
 }
