@@ -102,8 +102,13 @@
 }
 
 #names {
-    width: 160px;
-    min-width: 160px;
+    width: 140px;
+    min-width: 140px;
+}
+
+#innerName {
+    width: 400px;
+    min-width: 400px;
 }
 
 #removeUnderline01 {
@@ -181,6 +186,13 @@
   left: 60px;
   z-index: 9998;
   background: white;
+}
+
+.grid-col--fixed-left3 {
+    position: sticky;
+    left: 40px;
+    z-index: 9998;
+    background: white;
 }
 
 .grid-item {
