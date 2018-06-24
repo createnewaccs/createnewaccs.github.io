@@ -18,6 +18,7 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
+
 }
 
 .grid-container2 {
@@ -129,8 +130,10 @@
     color: #E9BBCA;
 }
 
-#headerName, #headerPrice, #headerRating, #headerReq, #headerSupply, #headerKYC, #headerType, #headerNumber {
+#headerName, #headerPrice, #headerRating, #headerReq, #headerSupply, #headerKYC, #headerType, #headerNumber, #headerCountDown {
     border-right: 1px solid #8D8B84;
+    height: 50px;
+    min-height: 50px;
 }
 
 #numbers, #KYC, #types, #rating, #countDowns {
@@ -147,7 +150,6 @@
 }
 
 #reqs {
-
 }
 
 #types {
@@ -169,6 +171,7 @@
 #countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06, #countDown07, #countDown08,
 #countDown09, #countDown10, #countDown11, #countDown12, #countDown13, #countDown14, #countDown15, #countDown16 {
     color: #000;
+
 }
 
 .grid-col--fixed-left {
@@ -198,6 +201,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow:hidden;
+  height: 50px;
+  min-height: 50px;
 }
 
 .grid-item2 {
