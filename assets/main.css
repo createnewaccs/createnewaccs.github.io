@@ -26,6 +26,12 @@
     width: 100%;
 }
 
+.grid-container3 {
+    display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
+    overflow: auto;
+    width: 100%;
+}
+
 .grid {
   display: flex;
   flex-wrap: nowrap;
@@ -43,7 +49,16 @@
     padding: 40px;
 }
 
-.grid-col, .grid-col2 {
+.grid3 {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    background-color: white;
+
+}
+
+.grid-col, .grid-col2, .grid-col3 {
     width: 100%;
 }
 
@@ -61,6 +76,12 @@
     font-size: 20px;
     top: 0;
     text-align: left;
+}
+
+.grid-item--header3 {
+    padding: 20px;
+    border-top: 1px solid #E7E8E8;
+    border-bottom: 1px solid #E7E8E8;
 }
 
 .grid-item--header2 #abv {
@@ -168,8 +189,12 @@
 }
 
 .grid-item2 {
-    padding: 18px;
+    padding: 20px;
     text-align: left;
+}
+
+.grid-item3 {
+    padding: 20px;
 }
 
 .grid-item:last-child {
