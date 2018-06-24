@@ -18,7 +18,6 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
-  min-height: 100vh;
 
 
 }
