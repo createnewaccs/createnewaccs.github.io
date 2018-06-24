@@ -23,14 +23,12 @@
   display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
   overflow: auto;
   width: 100%;
-
 }
 
 .grid-container2 {
     display: grid; /* This is a (hacky) way to make the .grid element size to fit its content */
     overflow: auto;
     width: 100%;
-
 }
 
 .grid {
@@ -52,8 +50,6 @@
 
 .grid-col, .grid-col2 {
     width: 100%;
-
-
 }
 
 .grid-item--header {
@@ -63,7 +59,6 @@
   color: #FFF;
   padding: 20px;
   top: 0;
-
 }
 
 .grid-item--header2 {
@@ -91,8 +86,8 @@
 }
 
 #names {
-    width: 100px;
-    min-width: 100px;
+    width: 160px;
+    min-width: 160px;
 }
 
 #removeUnderline01 {
@@ -103,7 +98,7 @@
     text-align: left;
 }
 
-#names01:hover, #removeUnderline01:hover {
+#names01:hover, #names02:hover, #names03:hover, #names04:hover, #names05:hover, #names06:hover, #removeUnderline:hover {
     color: #000;
 }
 
@@ -149,8 +144,8 @@
 }
 
 #countDowns {
-    width: 230px;
-    min-width: 230px;
+    width: 170px;
+    min-width: 170px;
 }
 
 #countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06, #countDown07, #countDown08,
@@ -185,10 +180,6 @@
 .grid-item:last-child {
     border: none;
 }
-
-
-
-
 
 
 
