@@ -49,7 +49,6 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     background-color: white;
-    padding: 20px;
 }
 
 .grid3 {
@@ -110,7 +109,7 @@
 }
 
 #innerName {
-
+padding: 20px;
 }
 
 #removeUnderline {
@@ -196,7 +195,7 @@ min-width: 150px;
 
 .grid-col--fixed-left3 {
     position: sticky;
-    left: 20px;
+    left: 0;
     z-index: 9998;
     background: white;
 }
@@ -217,7 +216,7 @@ min-width: 150px;
 }
 
 .grid-item3 {
-    padding: 20px;
+padding: 20px;
 }
 
 .grid-item:last-child {
