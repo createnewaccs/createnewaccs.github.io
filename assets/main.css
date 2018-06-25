@@ -45,7 +45,7 @@
 
 .grid2 {
     display: flex;
-    flex-wrap: nowrap;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     background-color: white;
@@ -53,6 +53,7 @@
 
 .grid3 {
     display: flex;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     background-color: white;
