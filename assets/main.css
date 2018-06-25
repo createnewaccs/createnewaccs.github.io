@@ -49,6 +49,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     background-color: white;
+    padding: 40px;
 }
 
 .grid3 {
@@ -147,27 +148,30 @@
     min-width: 80px;
 }
 
-#tsupply {
-
+#tsupply03 {
+width: 150px;
+min-width: 150px;
 }
 
-#reqs {
+#reqs03 {
 }
 
-#types {
-
+#types03 {
+text-align: center;
 }
 
 #rating {
 
 }
 
-#KYC {
-
+#KYC03 {
+text-align: center;
 }
 
-#countDowns {
-
+#countDowns03 {
+text-align: center;
+width: 150px;
+min-width: 150px;
 }
 
 #countDown01, #countDown02, #countDown03, #countDown04, #countDown05, #countDown06, #countDown07, #countDown08,
